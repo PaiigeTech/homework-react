@@ -1,38 +1,71 @@
-.App {
+.Weather-App {
+  background: white;
   text-align: center;
+  max-width: 600px;
+  margin:45px;
+  padding:30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65,50,100,0.08);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.city-list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  list-style: none;
+  color:#885df1
+}
+body{
+  background-color: #f9f7fe;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Search-Form{
+  background-color: #faf7fe;
+  border:none;
+  border-radius: 6px;
+  width:50%;
+  padding:15px 20px;
+  font-size:16px;
+}
+.Search-Form-Button{
+  background: #885df1;
+  padding:15px 30px;
+  border:none;
+  border-radius: 6px;
   color: white;
+  font-size:16px;
+  margin-right: 8px;
 }
-
-.App-link {
-  color: #61dafb;
+.Search-Form-Current{
+  background: blue;
+  padding:15px 30px;
+  border:none;
+  border-radius: 6px;
+  color: white;
+  font-size:16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Weather-App-Results{
+  text-align:left;
+  Max-width: 70%;
+}
+.Weather-App-Description{
+  text-align:right;
+  margin-top:0px;
+}
+.Temperature{
+  text-align: right;
+  margin-bottom: 35px;
+  Font-size:46px;
+  margin:0;
+}
+.Weather-App-Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+.Upcoming-Temperature-List{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color:grey;
 }
